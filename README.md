@@ -1,7 +1,7 @@
 Student Management System (Java)
 
 Overview:
-This is a console-based Student Management System built using Java. It allows users to manage student records efficiently using object-oriented programming concepts.
+This is a console-based Student Management System built using Java. It allows users to manage student records efficiently using object-oriented programming concepts. Project developed as part of BYOP submission.
 
 Features:
 * Add student
