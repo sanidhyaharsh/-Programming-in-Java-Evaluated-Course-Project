@@ -6,7 +6,7 @@ public class Main{
     StudentManager sm=new StudentManager();
     
     while(true){
-      System.out.println("\n1.Add 2.View 3.Search 4.Delete 5.Save 6.Load 7.Exit");
+      System.out.println("\n1.Add 2.View 3.Search by ID 4.Search by Name 5.Delete 6.Save 7.Load 8.Exit");
       int ch=sc.nextInt();
       
       try{
@@ -27,23 +27,28 @@ public class Main{
             System.out.print("Enter ID: ");
             sm.searchStudent(sc.nextInt());
             break;
-            
           case 4:
+            System.out.print("Enter name: );
+            String name = sc.next();
+            sm.searchStudent(name);
+            break;
+            
+          case 5:
             System.out.print(Enter ID: ");
             sm.deleteStudent(sc.nextInt());
             break;
             
-          case 5:
+          case 6:
             FileHandler.saveToFile(sm);
             System.out.println("Saved!");
             break;
             
-          case 6:
+          case 7:
             FileHandler.loadFromFile(sm);
             System.out.println("Loaded!");
             break;
             
-          case 7:
+          case 8:
             return;
         }
       } catch (Exception e){
