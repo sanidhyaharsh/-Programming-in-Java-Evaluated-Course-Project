@@ -23,6 +23,16 @@ class StudentManager{
     System.out.println("Student not found");
   }
   
+  void searchStudent(String name){
+    for (Student s:students){
+      if(s.name.equalsIgnoreCase(name)){
+        s.display();
+        return;
+      }
+    }
+    System.out.println("Student not found");
+  }
+  
   void deleteStudent(int id){
     students.removeIf(s->s.id==id);
   }
